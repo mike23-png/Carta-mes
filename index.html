@@ -14,3 +14,54 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #fffaf2;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 90%;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 2rem;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Feliz mes, amor mío 💛</h1>
+    <p>
+      Realmente hemos pasado por muchas cosas…<br>
+      pero me encanta que ya llevamos un mes juntos.<br><br>
+      Gracias por existir y por hacerme sonreír tanto.<br>
+      ¡Vamos por más aventuras, mi vida! 😄<br><br>
+      <strong>Con amor, Mike</strong>
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sweet.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</body>
+</html>
